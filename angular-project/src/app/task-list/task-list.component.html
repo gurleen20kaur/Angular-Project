@@ -1,5 +1,11 @@
 <h2>My Tasks</h2>
 
+<section class="debug-box">
+  <h3>Debug Info</h3>
+  <p><strong>newTask:</strong> {{ newTask }}</p>
+  <p><strong>All tasks:</strong> {{ tasks }}</p>
+</section>
+
 <form (ngSubmit)="addTask()">
   <input type="text"
          [(ngModel)]="newTask"
